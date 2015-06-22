@@ -439,10 +439,65 @@ th {
 
 /*******TEMPORARY SHOW*******/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightgray;
+  -webkit-font-smoothing: antialiased;
+}
+
+body ul {
+  list-style-type: none;
 }
 
 div {
   border: 1px solid chocolate;
 }
+
+
+/*******NAVIGATION BAR*******/
+
+
+.top-navigation {
+  background-color: white; 
+}
+
+.top-navigation > .content {
+    width: 100%;
+    max-width: 970px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.content img {
+  height: 70px;
+}
+
+.top-navigation .links {
+  float: right;
+}
+
+.links li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
+}
+
+.content {
+  padding: 0px 15px;
+}
+
+.content img {
+  max-height: 75%;
+  margin-top: 8px;
+}
+
+.links {
+  margin-top: 22px;
+}
+
