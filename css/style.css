@@ -457,7 +457,7 @@ body ul {
 }
 
 div {
-  border: 1px solid chocolate;
+  /*border: 1px solid chocolate;*/
 }
 
 
@@ -466,10 +466,12 @@ div {
 
 .top-navigation {
   background-color: white; 
+  position: fixed;
+  display: inline;
+  width: 100%;
 }
 
 .top-navigation > .content {
-    width: 100%;
     max-width: 970px;
     height: 70px;
     margin: 0 auto;
@@ -485,12 +487,13 @@ div {
 
 .links li {
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
   
 }
 
 .content {
   padding: 0px 15px;
+  padding-right: 100px;
 }
 
 .content img {
@@ -513,3 +516,44 @@ div {
   font-weight: 600;
 }
 
+
+/******* HEADER *******/
+
+.header {
+  background-image: url('../img/first-background.jpg');
+  height: 720px;
+  background-size: cover left;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  padding-top: 235px;
+  /*overflow: auto;*/
+}
+
+.header-content h1, h3 {
+  color: white;
+  font-weight: lighter;
+}
+
+.header-content h1 {
+  font-size: 3.2rem;
+}
+
+.header-content h3 {
+  font-size: 1.7rem;
+  margin-top: -30px;
+}
+
+.button {
+  background-color: #f15a29;
+  font-size: 1.2rem;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 4%;
+  border: 0px;
+}
+
+.button:hover {
+  background-color: #d9400e;
+}
