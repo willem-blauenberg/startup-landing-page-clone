@@ -444,7 +444,7 @@ th {
 }
 
 body {
-  background-color: lightgray;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -469,6 +469,7 @@ div {
   position: fixed;
   display: inline;
   width: 100%;
+  border-bottom: 1px solid gray;
 }
 
 .top-navigation > .content {
@@ -531,6 +532,13 @@ div {
   /*overflow: auto;*/
 }
 
+h1 {
+  color: white;
+  font-weight: lighter;
+}
+
+
+
 .header-content h1, h3 {
   color: white;
   font-weight: lighter;
@@ -556,4 +564,82 @@ div {
 
 .button:hover {
   background-color: #d9400e;
+}
+
+
+/******* GRIDS *******/
+
+/* We want 3 columns with a separation of 90px 
+between them. 1000px / 3 = 333.33 - 90 = 240px 
+per column
+
+One column: (240 / 1000) * 100 = 24%
+Two columns + 1 gutter: 240+240 = 490 --> + 90 =
+580 --> (580 / 1000) * 100 =  58%
+
+Three column + 2 gutter: 580 + 240 + 90 = 91%
+
+*/
+.maincontent {
+  width: 100%;
+  height: 370px;
+  max-width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.maincontent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='grid-'] {
+  float: left;
+  margin-right: 3%;
+  height: 300px;
+  text-align: center;
+  color: black;
+}
+
+[class*='grid-']:last-of-type {
+  margin-right: 0;
+}
+
+[class*='grid-']:first-of-type {
+  margin-left: 20%;
+}
+
+.grid-1 {
+    width: 18%;
+    /*background-color: red;*/
+  }
+.grid-2 {
+    width: 18%;
+    /*background-color: blue*/
+  }
+.grid-3 {
+    width: 18%;
+    /*background-color: green;*/
+  }
+
+/******* CONTENT *******/
+
+.content-title {
+  margin-top: 120px;
+  margin-bottom:55px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3rem;
+  color: black;
+}
+
+[class*='grid-'] img{
+  width: 45%;
+}
+
+
+[class*='grid-'] h3 {
+  color: black;
+  font-weight: lighter;
+  font-size: 1.7rem;
 }
