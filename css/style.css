@@ -480,6 +480,7 @@ div {
 
 .content img {
   height: 70px;
+  margin: 0 auto;
 }
 
 .top-navigation .links {
@@ -500,7 +501,7 @@ div {
 .content img {
   max-height: 60%;
   margin-top: 12px;
-  margin-left: 110px;
+  /*margin-left: 110px;*/
 }
 
 .links {
@@ -676,3 +677,115 @@ Three column + 2 gutter: 580 + 240 + 90 = 91%
 .footer ul li img:hover {
   cursor: pointer;
 }
+
+/******* MEDIA QUERIES *******/
+
+@media (max-width: 900px) {
+
+/*******NAVIGATION BAR*******/
+
+.top-navigation,
+.content {
+
+  display: inline-block;
+  clear: both;
+  max-width: 100%;
+}
+
+.content img {
+  float: left;
+  padding: 0;
+  margin-left: 0;
+  position: fixed;
+  height: 6%;
+}
+
+.link {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.link li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+}
+
+
+@media (max-width: 522px) {
+
+.header {
+  background-size: cover;
+  background-position: center;
+}
+
+.content-title {
+  font-size: 2.2rem;
+}
+
+.content {
+  height: auto;
+  display: block;
+}
+
+.maincontent {
+  display: inline;
+}
+
+
+.grid-1 {
+    width: 60%;
+    margin: auto;
+    /*background-color: red;*/
+  }
+.grid-2 {
+    width: 60%;
+    margin: auto 20%;
+    float: ;
+    /*background-color: blue*/
+  }
+.grid-3 {
+    width: 60%;
+    margin: auto 20%;
+    float: ;
+}
+
+.content {
+  background-color:;
+}
+
+.maincontent {
+  background-color: ;
+}
+
+.footer {
+  background-color: ;
+}
+
+}
+
+@media (max-width: 900px) and (min-width: 522px) {
+  .maincontent {
+
+  }
+
+[class*='grid-']:first-of-type {
+  margin-left: 12%;
+}
+
+.grid-1 {
+    width: 22%;
+    /*background-color: red;*/
+  }
+.grid-2 {
+    width: 22%;
+    /*background-color: blue*/
+  }
+.grid-3 {
+    width: 22%;
+    /*background-color: green;*/
+  }
+
+  }
