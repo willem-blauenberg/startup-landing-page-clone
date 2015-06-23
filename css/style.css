@@ -446,6 +446,10 @@ th {
 body {
   background-color: lightgray;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
 }
 
 body ul {
@@ -482,10 +486,7 @@ div {
 .links li {
   display: inline-block;
   margin-left: 3rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #838994;
-  letter-spacing: 0.03em;
+  
 }
 
 .content {
@@ -493,11 +494,22 @@ div {
 }
 
 .content img {
-  max-height: 75%;
-  margin-top: 8px;
+  max-height: 60%;
+  margin-top: 12px;
+  margin-left: 110px;
 }
 
 .links {
   margin-top: 22px;
+}
+
+.links li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.active {
+  color: #4c5058;
+  font-weight: 600;
 }
 
