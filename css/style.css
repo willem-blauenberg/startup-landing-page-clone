@@ -463,7 +463,7 @@ div {
 
 /*******NAVIGATION BAR*******/
 
-
+/*
 .top-navigation {
   background-color: white; 
   position: fixed;
@@ -501,7 +501,7 @@ div {
 .content img {
   max-height: 60%;
   margin-top: 12px;
-  /*margin-left: 110px;*/
+  /*margin-left: 110px;
 }
 
 .links {
@@ -517,6 +517,93 @@ div {
   color: #4c5058;
   font-weight: 600;
 }
+*/
+
+
+/*******NAVBAR --GRIDS--*******/
+/* .top-navigation > .navcontent > .grid# */
+
+.top-navigation {
+  width: 100%;
+  background-color:;
+}
+
+.navcontent {
+  width: 100%;
+  max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navcontent div{
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1%;
+}
+
+.navcontent div:first-child {
+  margin-top: 10px;
+  margin-right: 75px;
+}
+
+
+.navcontent img {
+  /*display: inline-block;*/
+  max-width: 35px; /*35px 40%*/
+  margin:;
+}
+
+.navcontent > [class^='grid-'] {
+   
+}
+
+.top-navigation:after,
+.navcontent:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* 6 grids and 970px 5 gutters of 20px
+970 / 6 = 160 - 20px = 140
+1 grid = 14%
+2 grids 1 gutter= 30%
+3 grids 2 gutter= 46%
+4 grids 3 gutter= 62%
+5 grids 4 gutter= 78%
+6 grids 5 gutter= 94%
+*/
+
+.grid1 {
+    width: 12%;
+    background-color:;
+  }
+.grid2 {
+    width: 30%;
+    background-color: blue
+  }
+.grid3 {
+    width: 46%;
+    background-color: green;
+  }
+.grid4 {
+    width: 62%;
+    background-color: red;
+  }
+.grid5 {
+    width: 78%;
+    background-color: blue
+  }
+.grid6 {
+    width: 94%;
+    background-color: green;
+  }
+
+
 
 
 /******* HEADER *******/
